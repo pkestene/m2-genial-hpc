@@ -38,7 +38,7 @@ Resources pour le cours d'introduction au HPC / calcul haute performance du mast
 - http://syllabus.gputeachingkit.com/
 - [udemy/cuda-programming-masterclass](https://www.udemy.com/cuda-programming-masterclass/)
 - SDL2 Graphics User Interface : https://github.com/rogerallen/smandelbrotr
-- [mgbench](https://github.com/tbennun/mgbench) : a multi-GPU benchmark 
+- [mgbench](https://github.com/tbennun/mgbench) : a multi-GPU benchmark
 - performance analysis : [parallelforall blog on Nsight](https://devblogs.nvidia.com/using-nsight-compute-to-inspect-your-kernels/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+nvidia%2Fparallelforall+%28NVIDIA+Parallel+Forall+Blog%29)
 - misc : [convert CUDA to portable C++ for AMD GPU](https://github.com/ROCm-Developer-Tools/HIP)
 - [List of Nvidia GPUs](https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units)
@@ -58,15 +58,21 @@ Resources pour le cours d'introduction au HPC / calcul haute performance du mast
 
 - [C++ wrapper library](https://github.com/eyalroz/cuda-api-wrappers)
 - [template CMake project for CUDA](https://github.com/pkestene/cuda-proj-tmpl)
+- [Multi-GPU programming from FZJ](https://github.com/FZJ-JSC/tutorial-multi-gpu)
+- [Multi-GPU programming from Nvidia](https://github.com/NVIDIA/multi-gpu-programming-models)
+- [CUDA Library samples](https://github.com/NVIDIA/CUDALibrarySamples) ([cuFFT](https://docs.nvidia.com/cuda/cufft/index.html), [cuSolver](https://docs.nvidia.com/cuda/cusolver/index.html) , [cuSparse](https://docs.nvidia.com/cuda/cusparse/index.html), ...)
+- [MatX](https://github.com/NVIDIA/MatX), a GPU-Accelerated Numerical Computing C++ library
 
 ### CUDA / python
 
+- (NEW 2021) [legate](https://github.com/nv-legate/legate.core) and [cuNumeric](https://github.com/nv-legate/cunumeric)
+- [cuNumeric](https://github.com/nv-legate/cunumeric): drop-in remplacement for Numpy, built on top of [legion](https://github.com/StanfordLegion/legion)
+- [stdpar + cython](https://github.com/shwina/stdpar-cython)
 - [Numba](http://numba.pydata.org/) // [recommended numba tutorial for GPU programming](https://github.com/ContinuumIO/gtc2019-numba)
 - [CuPy](https://cupy.chainer.org/)
 - [pycuda](https://documen.tician.de/pycuda/)
 - [python / C++ CUDA interface (SWIG and Cython)](https://github.com/pkestene/npcuda-example)
 - [python / C++ CUDA interface with pybind11](https://github.com/pkestene/pybind11-cuda)
-- [legate](https://legion.stanford.edu/pdfs/legate-preprint.pdf)
 - [PythonHPC](https://github.com/eth-cscs/PythonHPC)
 - [HPC Python video's](https://www.cscs.ch/publications/tutorials/2018/high-performance-computing-with-python/)
 - [Hands-On GPU Programming with Python and CUDA](https://www.oreilly.com/library/view/hands-on-gpu-programming/9781788993913/) and [examples](https://github.com/PacktPublishing/Hands-On-GPU-Programming-with-Python-and-CUDA/tree/9e3473f834123860726712dca6259bb4e057a001)
@@ -82,6 +88,29 @@ Resources pour le cours d'introduction au HPC / calcul haute performance du mast
 - [tensorflow tutorial](https://github.com/eth-cscs/SummerSchool2019/tree/master/topics/tensorflow)
 - [AI cheatsheet](doc/ai_cheatsheet.pdf)
 - [m2dsupsdlclass](https://github.com/m2dsupsdlclass/lectures-labs)
+- [deep-learning-with-python-notebooks](https://github.com/fchollet/deep-learning-with-python-notebooks)
+- https://d2l.ai/
+- [Building a neural network FROM SCRATCH (no Tensorflow/Pytorch, just numpy & math)](https://www.youtube.com/watch?v=w8yWXqWQYmU&t=1s)
+
+### Physics Informed Neural Networks (PINN)
+
+- [Artificial Neural Networks for Solving Ordinary
+and Partial Differential Equations](https://www.cs.uoi.gr/~lagaris/papers/TNN-LLF.pdf), Lagaris etal, IEEE TRANSACTIONS ON NEURAL NETWORKS, VOL. 9, NO. 5, SEPTEMBER 1998
+- Physics Informed Deep Learning (Part I): Data-driven, Solutions of Nonlinear Partial Differential Equations, https://arxiv.org/pdf/1711.10561.pdf
+- Raissi et al, Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations, https://doi.org/10.1016/j.jcp.2018.10.045
+- https://github.com/openhackathons-org/gpubootcamp/tree/master/hpc_ai/PINN
+- [Nvidia Modulus documentation](https://docs.nvidia.com/deeplearning/modulus/index.html)
+- [Nvidia Modulus source code](https://gitlab.com/nvidia/modulus/modulus)
+- [Nvidia Modulus examples](https://gitlab.com/nvidia/modulus/examples)
+- [DeepXDE](https://github.com/lululxvi/deepxde)
+- [TensorDiffEq](https://github.com/tensordiffeq/TensorDiffEq)
+- [SciANN](https://github.com/sciann/sciann), [SciANN examples](https://github.com/sciann/sciann-applications)
+- [neurodiffeq](https://github.com/NeuroDiffGym/neurodiffeq)
+- Julia's [DiffEqFlux.jl](https://github.com/SciML/DiffEqFlux.jl), [NeuralOperators.jl](https://github.com/SciML/NeuralOperators.jl) and [OperatorLearning](https://github.com/SciML/OperatorLearning.jl)
+- https://github.com/maziarraissi/PINNs
+- [Fourier Neural Operator](https://github.com/zongyi-li/fourier_neural_operator)
+- a review article : [Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next](https://link.springer.com/article/10.1007/s10915-022-01939-z)
+- [slides by Lu Lu (Univ. Penn)](https://github.com/lululxvi/tutorials/blob/master/20211210_pinn/pinn.pdf)
 
 ### Graphics / GPU
 
@@ -131,7 +160,7 @@ How to build clang++ with openmp target (off-loading) support ?
 - https://developer.nvidia.com/blog/solar-storm-modeling-gpu-openacc/
 
 Which compiler with OpenAcc support ?
-- [Nvidia/PGI compiler](https://developer.nvidia.com/hpc-sdk) is the oldest and probably more mature OpenACC compiler. 
+- [Nvidia/PGI compiler](https://developer.nvidia.com/hpc-sdk) is the oldest and probably more mature OpenACC compiler.
 - [GNU/gcc](https://www.openacc.org/tools/gcc-for-openacc) provided by [Spack](https://spack.readthedocs.io/en/latest/) is the easiest way to get started for OpenMP/OpenACC offload with the GNU compiler.
 
 ### C++17 and parallel STL for CPU/GPU
@@ -147,6 +176,11 @@ Which compiler ?
 - GNU g++ version >= 9.1  (+ TBB) for multicore CPUs
 - clang >= 10.0.1 for multicore CPUs
 - [Intel OneApi HPC Toolkit](https://software.intel.com/content/www/us/en/develop/tools/oneapi/hpc-toolkit.html)
+
+### stdpar for Fortran
+
+- https://developer.nvidia.com/blog/accelerating-fortran-do-concurrent-with-gpus-and-the-nvidia-hpc-sdk/
+- example code [euler2d_cudaFortran](https://github.com/pkestene/euler2d_cudaFortran) : solving Euler's equations in Fortran with stdpar (do concurrent loops)
 
 ### SYCL
 
@@ -206,6 +240,17 @@ Alternate programming models for programming modern computing architectures in a
 - https://github.com/triSYCL/triSYCL
 - https://github.com/codeplaysoftware/computecpp-sdk
 
+### Performance portability
+
+- [Performance portability](https://performanceportability.org/)
+
+### Kokkos/C++ library
+
+- https://github.com/kokkos/kokkos
+- https://github.com/kokkos/kokkos-tutorials
+- https://github.com/kokkos/kokkos-tutorials/wiki/Kokkos-Lecture-Series
+- [C++ Performance Portability - A Decade of Lessons Learned - Christian Trott - CppCon 2022](https://www.youtube.com/watch?v=jNGGKFkt4lA)
+
 ### CMake
 
 - [cmake-cookbook](https://github.com/dev-cafe/cmake-cookbook) and the [book](https://www.packtpub.com/application-development/cmake-cookbook)
@@ -221,13 +266,13 @@ Alternate programming models for programming modern computing architectures in a
 
 - [Udacity CS344 video archive](https://www.youtube.com/playlist?list=PLvvwOd40Y2t9lCTtCOQLJd9vLA2muyJuA)
 - cuda related : https://gist.github.com/allanmac/f91b67c112bcba98649d - cuda_assert
-- [FPGA, loop transformation, matrix multiplication](https://arxiv.org/pdf/1805.08288.pdf) 
+- [FPGA, loop transformation, matrix multiplication](https://arxiv.org/pdf/1805.08288.pdf)
 - [Cycle du hype](https://fr.wikipedia.org/wiki/Cycle_du_hype)
 - https://press3.mcs.anl.gov/atpesc/files/2019/08/ATPESC_2019_Dinner_Talk_8_8-7_Foster-Coding_the_Continuum.pdf
 
 ### Shell and command line skills
 
-- Learn/improve your skill on Linux’s command line/Bash  
+- Learn/improve your skill on Linux’s command line/Bash
   e.g. http://swcarpentry.github.io/shell-novice/
 - http://www.tldp.org/LDP/abs/html/
 - http://www.epons.org/commandes-base-linux.php
